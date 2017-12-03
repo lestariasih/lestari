@@ -1,0 +1,804 @@
+<html>
+<head>
+	<title>CONTEKAN HTML</title>
+	<style>
+		table.sheet {
+			width: 100%;
+		}
+
+		table.sheet tr td table tr td {
+			text-decoration: none;
+			border-bottom-style: none;
+		}
+
+		table.sheet tr td {
+			border-bottom-style: dashed;
+			border-bottom-color: #AAAAAA;
+			border-bottom-width: 0.1;
+			vertical-align: top;
+			font-family: sans-serif;
+			width:25%;
+		}
+		table.sheet tr td.code {
+			width:25%;
+			font-family: monospace;
+			color: #A00000;
+		}
+		table.sheet tr td.attrhead {
+			font-family: monospace;
+			font-weight: bold;
+			color: #A000A0;
+		}
+		table.sheet tr td.sample-code {
+			width:25%;
+			font-family: monospace;
+			font-size: smaller;
+			border: 1px solid #000000;
+			color: #808080;
+			background-color: #FFFFCC;
+			padding: 5px;
+		}
+		table.sheet tr td.sample {
+			width:25%;
+			border: 1px solid #000000;
+			background-color: #FFFFFF;
+			padding: 5px;
+		}
+		table.sheet tr td.codeindt {
+			font-family: monospace;
+			padding-left: 20px;
+			color: #0000A0;
+		}
+		div.chapter {
+			margin-top: 30px;
+		}
+		th.head3 {
+			padding: 10px, 0px, 10px,0px;
+			height:70px;
+			text-transform: uppercase;
+		}
+		body {
+			background: #DDDDDD;
+		}
+	</style>
+</head>
+<body>
+
+<h1 align="center">CONTEKAN HTML</h1>
+
+<div class="chapter">
+	<table class="sheet">
+	<tr><th class="head3" id="basics">Dasar</th>
+	<th class="toplink"></th></tr>
+	<tr><td class="code">&lt;h?&gt; ... &lt;/h?&gt;</td><td class="cell">Judul (?= 1 terbesar hingga 6 untuk yang terkecil, contoh h1)</td><td class="sample-code">
+		&lt;h1&gt;Header 1&lt;/h1&gt;<br/>
+		&lt;h2&gt;Header 2&lt;/h2&gt;<br/>
+		&lt;h3&gt;Header 3&lt;/h3&gt;<br/>
+		&lt;h4&gt;Header 4&lt;/h4&gt;<br/>
+		&lt;h5&gt;Header 5&lt;/h5&gt;<br/>
+		&lt;h6&gt;Header 6&lt;/h6&gt;<br/></td><td class="sample"><h1>Header 1</h1><h2>Header 2</h2><h3>Header 3</h3><h4>Header 4</h4><h5>Header 5</h5><h6>Header 6</h6></td></tr>
+	<tr><td class="code">&lt;p&gt; ... &lt;/p&gt;</td><td class="cell">Paragraf tulisan</td><td class="sample-code"><b>&lt;p&gt;</b>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. <b>&lt;/p&gt;<br>&lt;p&gt;</b>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis<b>&lt;/p&gt;<br>&lt;p&gt;</b>suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?<b>&lt;/p&gt;</b></td><td class="sample"><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p><p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis</p><p>suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p></td></tr>
+	<tr><td class="code">&lt;b&gt; ... &lt;/b&gt;</td><td class="cell">Tebalkan tulisan</td><td class="sample-code">Tulisan ini &lt;b&gt;Tebal&lt;/b&gt; dan yang ini tidak</td><td class="sample">Tulisan ini <b>Tebal</b> dan yang ini tidak</td></tr>
+	<tr><td class="code">&lt;a href=&quot;<i>url</i>&quot;&gt; ... &lt;/a&gt;</td><td class="cell">Basic Link</td><td class="sample-code">Ini adalah &lt;a href=&quot;http://www.google.com&quot;&gt;link&lt;/a&gt; ke google</td><td class="sample">Ini adalah <a href="http://www.google.com">link</a> ke google</td></tr>
+	</table>
+</div>
+
+<div class="chapter">
+	<table class="sheet">
+	<tr><th class="head3" id="text">Memformat Tulisan</th>
+	<th class="toplink"></th></tr>
+	<tr><td class="code">&lt;h?&gt; ... &lt;/h?&gt;</td><td class="cell">Judul (?= 1 terbesar hingga 6 untuk yang terkecil, contoh h1)</td><td class="sample-code">
+		&lt;h1&gt;Header 1&lt;/h1&gt;<br/>
+		&lt;h2&gt;Header 2&lt;/h2&gt;<br/>
+		&lt;h3&gt;Header 3&lt;/h3&gt;<br/>
+		&lt;h4&gt;Header 4&lt;/h4&gt;<br/>
+		&lt;h5&gt;Header 5&lt;/h5&gt;<br/>
+		&lt;h6&gt;Header 6&lt;/h6&gt;<br/></td><td class="sample"><h1>Header 1</h1><h2>Header 2</h2><h3>Header 3</h3><h4>Header 4</h4><h5>Header 5</h5><h6>Header 6</h6></td></tr>
+	<tr><td class="code">&lt;b&gt; ... &lt;/b&gt;</td><td class="cell">Tebalkan tulisan</td><td class="sample-code">Tulisan ini &lt;b&gt;Tebal&lt;/b&gt; dan yang ini tidak</td><td class="sample">Tulisan ini <b>Tebal</b> dan yang ini tidak</td></tr>
+	<tr><td class="code">&lt;i&gt; ... &lt;/i&gt;</td><td class="cell">Tulisan miring</td><td class="sample-code">Tulisan ini &lt;i&gt;Miring&lt;/i&gt; dan yang ini tidak</td><td class="sample">Tulisan ini <i>Miring</i> dan yang ini tidak</td></tr>
+	<tr><td class="code">&lt;u&gt; ... &lt;/u&gt;</td><td class="cell">Tulisan dengan garis bawah</td><td class="sample-code">Tulisan ini ada &lt;u&gt;Garis Bawah&lt;/u&gt; dan yang ini tidak</td><td class="sample">Tulisan ini ada <u>Garis Bawah</u> dan yang ini tidak</td></tr>
+	<tr><td class="code">&lt;strike&gt; ... &lt;/strike&gt;</td><td class="cell">Tulisan yang dicoret</td><td class="sample-code">Tulisan ini ada &lt;strike&gt;Kena Coret&lt;/strike&gt; dan yang ini tidak</td><td class="sample">Tulisan ini ada <strike>Kena Coret</strike> dan yang ini tidak</td></tr>
+	<tr><td class="code">&lt;sup&gt; ... &lt;/sup&gt;</td><td class="cell">Superscript - Tulisan kecil diletakan atas tulisan normal</td><td class="sample-code">Tulisan ini pakai &lt;sup&gt;Tulisan Kecil&lt;/sup&gt; dan yang ini tidak</td><td class="sample">Tulisan ini pakai <sup>Tulisan Kecil</sup> dan yang ini tidak</td></tr></tr>
+	<tr><td class="code">&lt;sub&gt; ... &lt;/sub&gt;</td><td class="cell">Subscript - Tulisan kecil diletakan dibawah tulisan normal</td><td class="sample-code">Tulisan ini pakai &lt;sub&gt;Tulisan Kecil&lt;/sub&gt; dan yang ini tidak</td><td class="sample">Tulisan ini pakai <sub>Tulisan Kecil</sub> dan yang ini tidak</td></tr></tr>
+	<tr><td class="code">&lt;small&gt; ... &lt;/small&gt;</td><td class="cell">Small - Tulisan dengan huruf ber-ukuran &quot;Fineprint&quot;</td><td class="sample-code">Tulisan ini pakai &lt;small&gt;Tulisan Kecil&lt;/small&gt; dan yang ini tidak</td><td class="sample">Tulisan ini pakai <small>Tulisan Kecil</small> dan yang ini tidak</td></tr></tr>
+	<tr><td class="code">&lt;tt&gt; ... &lt;/tt&gt;</td><td class="cell">Tulisan &quot;Typewriter&quot; (model huruf mesin ketik)</td><td class="sample-code">Tulisan ini pakai &lt;tt&gt;Tulisan Typewriter&lt;/tt&gt; dan yang ini tidak</td><td class="sample">Tulisan ini pakai <tt>Tulisan Typewriter</tt> dan yang ini tidak</td></tr></tr>
+	<tr><td class="code">&lt;pre&gt; ... &lt;/pre&gt;</td><td class="cell">Tulisan tanpa format</td><td class="sample-code">&lt;pre&gt;Ini adalah tulisan<br>didalam pre,<br>baris demi baris<br>&lt;b&gt;Bold&lt;/b&gt;,&lt;i&gt;Italic&lt;/i&gt;, masih berlaku&lt;/pre&gt;</td><td class="sample"><pre>Ini adalah tulisan
+didalam pre,
+baris demi baris
+<b>Bold</b>, <i>Italic</i> masih berlaku</pre></td></tr>
+	<tr><td class="code">&lt;blockquote&gt; ... &lt;/blockquote&gt;</td><td class="cell">Tulisan &quot;Block Quote&quot;</td><td class="sample-code">Tulisan ini pakai &lt;blockquote&gt;Tulisan Block Quote&lt;/blockquote&gt; dan yang ini tidak</td><td class="sample">Tulisan ini pakai <blockquote>Tulisan Block Quote</blockquote> dan yang ini tidak</td></tr></tr>
+	<tr><td class="code">&lt;strong&gt; ... &lt;/strong&gt;</td><td class="cell">Strong - Terlihat tebal pada kebanyakan browser</td><td class="sample-code">Tulisan ini &lt;strong&gt;Tebal&lt;/strong&gt; dan yang ini tidak</td><td class="sample">Tulisan ini <strong>Tebal</strong> dan yang ini tidak</td></tr>
+	<tr><td class="code">&lt;em&gt; ... &lt;/em&gt;</td><td class="cell">Emphasis - Terlihat miring pada kebanyakan browser</td><td class="sample-code">Tulisan ini &lt;em&gt;Miring&lt;/em&gt; dan yang ini tidak</td><td class="sample">Tulisan ini <em>Miring</em> dan yang ini tidak</td></tr>
+	<tr><td class="code">&lt;font&gt; ... &lt;/font&gt;</td><td class="cell">Tag Font - Sudah tidak dipergunakan lagi, gunakan CSS</td><td class="sample-code">Tulisan ini &lt;font face="verdana" color="#FF0000"&gt;Font Verdana Merah&lt;/font&gt; dan yang ini tidak</td><td class="sample">Tulisan ini <font face="verdana" color="#FF0000">Font Verdana Merah</font> dan yang ini tidak</td></tr>
+	</table>
+</div>
+
+<div class="chapter">
+	<table class="sheet">
+	<tr><th class="head3" id="sections">Pembagian Area</th>
+	<th class="toplink"></th></tr>
+	<tr><td class="code">&lt;div&gt; ... &lt;/div&gt;</td><td class="cell">Pembagian (atau Area) pada halaman Web</td><td class="sample-code"><b>&lt;div style=&quot;background-color:#FFAAAA&quot;&gt;</b>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. <b>&lt;/div&gt;<br>&lt;div style=&quot;background-color:#AAFFAA&quot;&gt;</b>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis<b>&lt;/div&gt;<br>&lt;div style=&quot;background-color:#AAAAFF&quot;&gt;</b>suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?<b>&lt;/div&gt;</b></td><td class="sample"><div style="background-color:#FFAAAA">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </div><div style="background-color:#AAFFAA">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis</div><div style="background-color:#AAAAFF">suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</div></td></tr>
+	<tr><td class="code">&lt;p&gt; ... &lt;/p&gt;</td><td class="cell">Paragraf Tulisan</td><td class="sample-code"><b>&lt;p&gt;</b>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. <b>&lt;/p&gt;<br>&lt;p&gt;</b>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis<b>&lt;/p&gt;<br>&lt;p&gt;</b>suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?<b>&lt;/p&gt;</b></td><td class="sample"><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p><p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis</p><p>suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p></td></tr>
+	<tr><td class="code">&lt;br&gt;</td> <td class="cell">Pindah Baris</td><td class="sample-code">Sed ut perspiciatis unde omnis iste natus error sit&lt;br/&gt;voluptatem accusantium doloremque laudantium,&lt;br/&gt;totam rem aperiam, eaque ipsa quae ab illo inventore&lt;br/&gt;veritatis et quasi architecto beatae vitae&lt;br/&gt;dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit&lt;br/&gt;aspernatur aut odit aut fugit, sed quia consequuntur&lt;br/&gt;magni dolores eos qui ratione voluptatem sequi nesciunt. </td><td class="sample">Sed ut perspiciatis unde omnis iste natus error sit<br/>voluptatem accusantium doloremque laudantium,<br/>totam rem aperiam, eaque ipsa quae ab illo inventore<br/>veritatis et quasi architecto beatae vitae<br/>dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit<br/>aspernatur aut odit aut fugit, sed quia consequuntur<br/>magni dolores eos qui ratione voluptatem sequi nesciunt. </td></tr>
+	<tr><td class="code">&lt;hr&gt;</td> <td class="cell">Garis Melintang</td><td class="sample-code">Tulisan ini sebelum &lt;hr/&gt; Tulisan sesudah</td><td class="sample">Tulisan ini sebelum <hr/> Tulisan sesudah</td></tr></tr>
+	<tr><td class="attrhead">&lt;hr&gt; Settingan Tag:</td><td class="cell">&nbsp;</td><td class="sample-code"></td><td class="sample"></td></tr>
+	<tr><td class="codeindt">size=&quot;?&quot;</td><td class="cell">Ketebalan Garis dalam Pixel</td><td class="sample-code">Tulisan ini sebelum &lt;hr size=&quot;15&quot;/&gt; Tulisan sesudah</td><td class="sample">Tulisan ini sebelum <hr size="15"/> Tulisan sesudah</td></tr></tr>
+	<tr><td class="codeindt">width=&quot;?&quot;</td><td class="cell">Lebar Garis dalam Pixel</td><td class="sample-code">Tulisan ini sebelum garis 200 pixel &lt;hr width=&quot;200&quot;/&gt; Tulisan sesudah</td><td class="sample">Tulisan ini sebelum garis 200 pixel <hr width="200"/> Tulisan sesudah</td></tr></tr>
+	<tr><td class="codeindt">width=&quot;??%&quot;</td><td class="cell">Lebar Garis dalam Prosentase.</td><td class="sample-code">Tulisan ini sebelum garis 50% &lt;hr width=&quot;50%&quot;/&gt; Tulisan sesudah. 
+	Tulisan ini sebelum garis 80% &lt;hr width=&quot;800%&quot;/&gt; Tulisan sesudah. 
+	Tulisan ini sebelum garis 1000% &lt;hr width=&quot;100%&quot;/&gt; Tulisan sesudah. </td><td class="sample">Tulisan ini sebelum garis 50% <hr width="50%"/> Tulisan sesudah. 
+Tulisan ini sebelum garis 80% <hr width="80%"/> Tulisan sesudah. 
+Tulisan ini sebelum garis 100% <hr width="100%"/> Tulisan sesudah. </td></tr></tr>
+	<tr><td class="codeindt">color=&quot;#??????&quot;</td> <td class="cell">Warna Garis</td><td class="sample-code">Tulisan ini sebelum garis merah. &lt;hr color=&quot;#FF0000&quot;/&gt; Tulisan sesudah</td><td class="sample">Tulisan ini sebelum garis merah. <hr color="#FF0000"/> Tulisan sesudah</td></tr></tr>
+	<tr><td class="codeindt">align=&quot;?&quot;</td> <td class="cell">Penempatan garis secara horizontal: <code>left (kiri), center (tengah), right (kanan)</code> </td><td class="sample-code">Tulisan ini sebelum garis 50% rapat kiri&lt;hr width=&quot;50%&quot; align=&quot;left&quot;/&gt; 
+Tulisan ini sebelum garis 50% tengah &lt;hr width=&quot;50%&quot; align=&quot;center&quot;/&gt; 
+Tulisan ini sebelum garis 50% rapat kanan &lt;hr width=&quot;50%&quot; align=&quot;right&quot;/&gt; Tulisan dibawah. </td><td class="sample">Tulisan ini sebelum garis 50% rapat kiri<hr width="50%" align="left"/>  
+Tulisan ini sebelum garis 50% tengah <hr width="50%" align="center"/> 
+Tulisan ini sebelum garis 50% rapat kanan <hr width="50%" align="right"/> Tulisan dibawah. </td></tr></tr>
+	</table>
+</div>
+
+
+
+<div class="chapter">
+	<table class="sheet">
+	<tr><th class="head3" id="images">Gambar</th>
+	<th class="toplink"></th></tr>
+	<tr><td class="code">&lt;img src=&quot;<i>url</i>&quot; alt=&quot;<i>text</i>&quot;&gt;</td> <td class="cell">Gambar Normal</td><td class="sample-code">Ini Gambar &lt;img src=&quot;https://sites.google.com/site/siteshelphowtos/_/rsrc/1334770749015/Html-256.png&quot;/&gt;</td><td class="sample">Ini Gambar <img src="https://sites.google.com/site/siteshelphowtos/_/rsrc/1334770749015/Html-256.png"/></td></tr>
+	<tr><td class="attrhead">&lt;img&gt; Settingan Tag:</td><td class="cell">&nbsp;</td><td class="sample-code"></td><td class="sample"></td></tr>
+	<tr><td class="codeindt">src=&quot;<i>url</i>&quot;</td><td class="cell">URL atau nama file dari gambar (WAJIB!)</td><td class="sample-code">Ini Gambar &lt;img src=&quot;https://sites.google.com/site/siteshelphowtos/_/rsrc/1334770749015/Html-256.png&quot;/&gt;</td><td class="sample">Ini Gambar <img src="https://sites.google.com/site/siteshelphowtos/_/rsrc/1334770749015/Html-256.png"/></td></tr>
+	<tr><td class="codeindt">alt=&quot;<i>text</i>&quot;</td><td class="cell">Tulisan Pengganti</td><td class="sample-code">Ini Gambar &lt;img src=&quot;https://sites.google.com/site/siteshelphowtos/_/rsrc/1334770749015/Html-256.png&quot; alt=&quot;Ini tulisan pengganti&quot;/&gt;</td><td class="sample">Ini Gambar <img src="https://sites.google.com/site/siteshelphowtos/_/rsrc/1334770749015/Html-256.png" alt="Ini tulisan pengganti"/></td></tr>
+	<tr><td class="codeindt">align=&quot;?&quot;</td><td class="cell">Penempatan gambar pada tulisan sekitarnya.</td><td class="sample-code">Ini Gambar rapat kanan &lt;img src=&quot;https://sites.google.com/site/siteshelphowtos/_/rsrc/1334770749015/Html-256.png&quot; align=&quot;right&quot;/&gt;</td><td class="sample">Ini Gambar rapat kanan<img src="https://sites.google.com/site/siteshelphowtos/_/rsrc/1334770749015/Html-256.png" align="right"/></td></tr>
+	<tr><td class="codeindt">width=&quot;??&quot;</td><td class="cell">Lebar gambar (Dalam pixel atau %)</td><td class="sample-code">Ini Gambar lebar 30% &lt;img src=&quot;https://sites.google.com/site/siteshelphowtos/_/rsrc/1334770749015/Html-256.png&quot; width=&quot;30%&quot;/&gt;</td><td class="sample">Ini Gambar lebar 30%<img src="https://sites.google.com/site/siteshelphowtos/_/rsrc/1334770749015/Html-256.png" width="30%"/></td></tr>
+	<tr><td class="codeindt">height=&quot;??&quot;</td><td class="cell">Tinggi gambar (Dalam pixel atau %)</td><td class="sample-code">Ini Gambar tinggi 100 pixel &lt;img src=&quot;https://sites.google.com/site/siteshelphowtos/_/rsrc/1334770749015/Html-256.png&quot; height=&quot;100px&quot;/&gt;</td><td class="sample">Ini Gambar tinggi 100 pixel<img src="https://sites.google.com/site/siteshelphowtos/_/rsrc/1334770749015/Html-256.png" height="100px"/></td></tr>
+	<tr><td class="codeindt">border=&quot;??&quot;</td><td class="cell">Ketebalan garis tepi (bingkai) gambar dalam pixel</td><td class="sample-code">Ini Gambar &lt;img src=&quot;https://sites.google.com/site/siteshelphowtos/_/rsrc/1334770749015/Html-256.png&quot; border=&quot;5&quot;/&gt;</td><td class="sample">Ini Gambar <img src="https://sites.google.com/site/siteshelphowtos/_/rsrc/1334770749015/Html-256.png" border="5"/></td></tr>
+	<tr><td class="codeindt">vspace=&quot;??&quot;</td><td class="cell">Jarak kosong diatas dan dibawah gambar dalam pixel </td><td class="sample-code">Ini Gambar &lt;img src=&quot;https://sites.google.com/site/siteshelphowtos/_/rsrc/1334770749015/Html-256.png&quot; vspace=&quot;15&quot;/&gt;</td><td class="sample">Ini Gambar <img src="https://sites.google.com/site/siteshelphowtos/_/rsrc/1334770749015/Html-256.png" vspace="15"/></td></tr>
+	<tr><td class="codeindt">hspace=&quot;??&quot;</td><td class="cell">Jarak kosong di kiri dan kanan gambar dalam pixel</td><td class="sample-code">Ini Gambar &lt;img src=&quot;https://sites.google.com/site/siteshelphowtos/_/rsrc/1334770749015/Html-256.png&quot; hspace=&quot;15&quot;/&gt;</td><td class="sample">Ini Gambar <img src="https://sites.google.com/site/siteshelphowtos/_/rsrc/1334770749015/Html-256.png" hspace="15"/></td></tr>
+	</table>
+</div>
+
+<div class="chapter">
+	<table class="sheet">
+	<tr><th class="head3" id="linking">Tag untuk Link (Tautan)</th>
+	<th class="toplink"></th></tr>
+	<tr><td class="code">&lt;a href=&quot;<i>url</i>&quot;&gt; <i>link text</i> &lt;/a&gt;</td><td class="cell">Tautan Normal</td><td class="sample-code">Ini &lt;a href=&quot;http://www.google.com&quot;&gt;TAUTAN&lt;/a&gt;  ke Google.</td><td class="sample">Ini <a href="http://www.google.com">TAUTAN</a> ke Google.</td></tr>
+	<tr><td class="attrhead">&lt;a&gt; Settingan Tag:</td><td class="cell">&nbsp;</td><td class="sample-code"></td><td class="sample"></td></tr>
+	<tr><td class="codeindt">href=&quot;<i>url</i>&quot;</td>	<td class="cell">Lokasi (url) dimana tautan akan diarahkan.</td><td class="sample-code">Ini &lt;a href=&quot;http://www.google.com&quot;&gt; TAUTAN&lt;/a&gt;  ke Google.</td><td class="sample">Ini <a href="http://www.google.com">TAUTAN</a> ke Google.</td></tr>
+	<tr><td class="codeindt">name=&quot;??&quot;</td>	<td class="cell">Nama tautan (Atau tanda buku (bookmark))</td><td class="sample-code">Ini &lt;a name=&quot;tandabuku&quot;&gt; TAUTAN&lt;/a&gt;</td><td class="sample">Ini <a name="tandabuku">TAUTAN</a></td></tr>
+	<tr><td class="codeindt">target=&quot;?&quot;</td>	<td class="cell">Target pembukaan tautan: <code>_self (pada window "frame" yang sama), _blank (window baru), _top (buka pada tab yang sama), _parent (buka pada "frame" yang menaungi)</code> Penggunaan <code>target</code> erat dengan penggunaan tag <code>frame</code> atau <code>iframe</code>.</td><td class="sample-code">
+		Ini &lt;a href=&quot;http://www.google.com&quot; target=&quot;_self&quot;&gt;LINK&lt;/a&gt; dengan target _self&lt;br/&gt;<br/>
+		Ini &lt;a href=&quot;http://www.google.com&quot; target=&quot;_blank&quot;&gt;LINK&lt;/a&gt; dengan target _blank&lt;br/&gt;<br/>
+		Ini &lt;a href=&quot;http://www.google.com&quot; target=&quot;_top&quot;&gt;LINK&lt;/a&gt; dengan target _top&lt;br/&gt;<br/>
+		Ini &lt;a href=&quot;http://www.google.com&quot; target=&quot;_parent&quot;&gt;LINK&lt;/a&gt; dengan target _parent
+	</td><td class="sample">
+		Ini <a href="http://www.google.com" target="_self">LINK</a> dengan target _self<br/>
+		Ini <a href="http://www.google.com" target="_blank">LINK</a> dengan target _blank<br/>
+		Ini <a href="http://www.google.com" target="_top">LINK</a> dengan target _top<br/>
+		Ini <a href="http://www.google.com" target="_parent">LINK</a> dengan target _parent
+	</td></tr>
+	<tr><td class="codeindt">href=&quot;<i>url#bookmark</i>&quot;</td>	<td class="cell">Tautan pada tanda buku (Tanda buku dibuat menggunakan setingan <code>name</code> diatas).</td><td class="sample-code">Ini &lt;a href=&quot;contekan.html#tandabuku&quot;&gt;TAUTAN&lt;/a&gt;  ke Tanda Buku.</td><td class="sample">Ini <a href="contekan.html#tandabuku">TAUTAN</a> ke Tanda Buku.</td></tr>
+	<tr><td class="codeindt">href=&quot;mailto:<i>email</i>&quot;</td>	<td class="cell">Tautan yang akan membuka pengiriman email pada alamat email yang disebutkan. Akan membuka aplikasi email yang ada (tergantung aplikasi email yang digunakan oleh user).</td><td class="sample-code">Ini &lt;a href=&quot;mailto:ferdinand.nemam@gmail.com&quot;&gt;TAUTAN&lt;/a&gt;  ke Aplikasi Email.</td><td class="sample">Ini <a href="mailto:ferdinand.nemam@gmail.com">TAUTAN</a> ke Aplikasi Email.</td></tr>
+	</table>
+</div>
+
+<div class="chapter">
+	<table class="sheet">
+	<tr><th class="head3" id="lists">Daftar</th>
+	<th class="toplink"></th></tr>
+	<tr><td class="code">&lt;ol&gt; ... &lt;/ol&gt;</td><td class="cell">Daftar ber-urut (Ordered)</td><td class="sample-code">
+		Ini adalah daftar :<br>
+		&lt;ol&gt;<br>
+		&nbsp;&nbsp;&lt;li&gt;Isi Pertama&lt;/li&gt;<br>
+		&nbsp;&nbsp;&lt;li&gt;Isi Kedua&lt;/li&gt;<br>
+		&nbsp;&nbsp;&lt;li&gt;Isi Isi Ketiga&lt;/li&gt;<br>
+		&lt;/ol&gt;
+	</td><td class="sample">
+		Ini adalah daftar :
+		<ol>
+			<li>Isi Pertama</li>
+			<li>Isi Kedua</li>
+			<li>Isi Isi Ketiga</li>
+		</ol>
+	</td></tr>
+	<tr><td class="code">&lt;ul&gt; ... &lt;/ul&gt;</td><td class="cell">Daftar tidak ber-urut (Un-ordered)</td><td class="sample-code">
+		Ini adalah daftar :<br>
+		&lt;ul&gt;<br>
+		&nbsp;&nbsp;&lt;li&gt;Isi Pertama&lt;/li&gt;<br>
+		&nbsp;&nbsp;&lt;li&gt;Isi Kedua&lt;/li&gt;<br>
+		&nbsp;&nbsp;&lt;li&gt;Isi Isi Ketiga&lt;/li&gt;<br>
+		&lt;/ul&gt;
+	</td><td class="sample">
+		Ini adalah daftar :
+		<ul>
+			<li>Isi Pertama</li>
+			<li>Isi Kedua</li>
+			<li>Isi Isi Ketiga</li>
+		</ul>
+	</td></tr>
+	<tr><td class="code">&lt;li&gt; ... &lt;/li&gt;</td><td class="cell">Isi Daftar (didalam daftar berurut atau tidak)</td><td class="sample-code">
+		Ini adalah daftar :<br>
+		&lt;ul&gt;<br>
+		&nbsp;&nbsp;&lt;li&gt;Isi Pertama&lt;/li&gt;<br>
+		&nbsp;&nbsp;&lt;li&gt;Isi Kedua&lt;/li&gt;<br>
+		&nbsp;&nbsp;&lt;li&gt;Isi Isi Ketiga&lt;/li&gt;<br>
+		&lt;/ul&gt;
+	</td><td class="sample">
+		Ini adalah daftar :
+		<ul>
+			<li>Isi Pertama</li>
+			<li>Isi Kedua</li>
+			<li>Isi Isi Ketiga</li>
+		</ul>
+	</td></tr>
+	<tr><td class="code">&lt;ol type=&quot;<i>?</i>&quot;&gt;</td>	<td class="cell">Jenis daftar berurut: <code> A, a, I, i, 1</code></td><td class="sample-code">
+		Ini adalah daftar : Tipe A<br>
+		&lt;ol type=&quot;A&quot;&gt;<br>
+		&nbsp;&nbsp;&lt;li&gt;Isi Pertama&lt;/li&gt;<br>
+		&nbsp;&nbsp;&lt;li&gt;Isi Kedua&lt;/li&gt;<br>
+		&nbsp;&nbsp;&lt;li&gt;Isi Isi Ketiga&lt;/li&gt;<br>
+		&lt;/ol&gt;
+	</td><td class="sample">
+		Ini adalah daftar : Tipe A
+		<ol type="A">
+			<li>Isi Pertama</li>
+			<li>Isi Kedua</li>
+			<li>Isi Isi Ketiga</li>
+		</ol>
+	</td></tr>
+	<tr><td class="code">&lt;ol start=&quot;??&quot;&gt;</td>	<td class="cell">Nilai awal pada daftar berurut</td><td class="sample-code">
+		Ini adalah daftar : Tipe A<br>
+		&lt;ol start=&quot;3&quot;&gt;<br>
+		&nbsp;&nbsp;&lt;li&gt;Isi Pertama&lt;/li&gt;<br>
+		&nbsp;&nbsp;&lt;li&gt;Isi Kedua&lt;/li&gt;<br>
+		&nbsp;&nbsp;&lt;li&gt;Isi Isi Ketiga&lt;/li&gt;<br>
+		&lt;/ol&gt;
+	</td><td class="sample">
+		Ini adalah daftar : Tipe A
+		<ol start="3">
+			<li>Isi Pertama</li>
+			<li>Isi Kedua</li>
+			<li>Isi Isi Ketiga</li>
+		</ol>
+	</td></tr>
+	<tr><td class="code">&lt;ul type=&quot;<i>?</i>&quot;&gt;</td>	<td class="cell">Jenis penanda daftar tidak ber-urut: <code> disc (lingkaran penuh), circle (lingkaran kosong), square (kotak)</code></td><td class="sample-code">
+		Ini adalah daftar :<br>
+		&lt;ul type=&quot;square&quot;&gt;<br>
+		&nbsp;&nbsp;&lt;li&gt;Isi Pertama&lt;/li&gt;<br>
+		&nbsp;&nbsp;&lt;li&gt;Isi Kedua&lt;/li&gt;<br>
+		&nbsp;&nbsp;&lt;li&gt;Isi Isi Ketiga&lt;/li&gt;<br>
+		&lt;/ul&gt;
+	</td><td class="sample">
+		Ini adalah daftar :
+		<ul type="square">
+			<li>Isi Pertama</li>
+			<li>Isi Kedua</li>
+			<li>Isi Isi Ketiga</li>
+		</ul>
+	</td></tr>
+	<tr><td class="code">&lt;li value=&quot;??&quot;&gt;</td>	<td class="cell">Nilai dari isi dalam daftar (mengubah nilai daftar tersebut dan sesudahnya)</td><td class="sample-code"></td><td class="sample"></td></tr>
+	<tr><td class="code">&lt;li type=&quot;??&quot;&gt;</td>	<td class="cell">Tipe isi (Hanya mengubah isi itu sendiri)</td><td class="sample-code"></td><td class="sample"></td></tr>
+	<tr><td class="code">&lt;dl&gt; ... &lt;/dl&gt;</td><td class="cell">Daftar definisi</td><td rowspan="3" class="sample-code">
+		&lt;dl&gt;<br>
+		&nbsp;&nbsp;&lt;dt>Coffee&lt;/dt&gt;<br>
+		&nbsp;&nbsp;&lt;dd>Sebuah minuman berwarna hitam yang terasa pahit dan mengandung caffein&lt;/dd&gt;<br>
+		&nbsp;&nbsp;&lt;dt>Milk&lt;/dt&gt;<br>
+		&nbsp;&nbsp;&lt;dd>Sebuah minuman produksi hewan berwarna putih yang kita biasa sebut dengan susu.&lt;/dd&gt;<br>
+		&lt;/dl&gt;
+	</td><td class="sample" rowspan="3">
+		<dl>
+		  <dt>Coffee</dt>
+		  <dd>Sebuah minuman berwarna hitam yang terasa pahit dan mengandung caffein</dd>
+		  <dt>Milk</dt>
+		  <dd>Sebuah minuman produksi hewan berwarna putih yang kita biasa sebut dengan susu.</dd>
+		</dl>
+	</td></tr>
+	<tr><td class="code">&lt;dt&gt; ... &lt;/dt&gt;</td><td class="cell">Kata atau kalimat yang sedang didefinisikan</td></tr>
+	<tr><td class="code">&lt;dd&gt; ... &lt;/dd&gt;</td><td class="cell">Definisi mendetil dari suatu kata atau kalimat.</td></tr>
+	</table>
+</div>
+
+<div class="chapter">
+	<table class="sheet">
+	<tr><th class="head3" id="tables">Tabel</th>
+	<th class="toplink"></th></tr>
+	<tr><td class="code">&lt;table&gt; ... &lt;/table&gt;</td><td class="cell">Sebuah Tabel</td><td class="sample-code">
+	&lt;table&gt;<br/>
+	&nbsp;&nbsp;&lt;tr&gt;&lt;td&gt;B1C1&lt;/td&gt;&lt;td&gt;B1C2&lt;/td&gt;&lt;/tr&gt;<br/>
+	&nbsp;&nbsp;&lt;tr&gt;&lt;td&gt;B2C1&lt;/td&gt;&lt;td&gt;B2C2&lt;/td&gt;&lt;/tr&gt;<br/>
+	&lt;/table&gt;<br/>
+	</td><td class="sample">
+	<table>
+		<tr><td>B1C1</td><td>B1C2</td></tr>
+		<tr><td>B2C1</td><td>B2C2</td></tr>
+	</table>
+	</td></tr>
+	<tr><td class="attrhead">&lt;table&gt; Settingan Tag:</td><td class="cell">&nbsp;</td><td class="sample-code"></td><td class="sample"></td></tr>
+	<tr><td class="codeindt">border=&quot;?&quot;</td>	<td class="cell">Ketebalan garis terluar dari tabel (bingkai)</td><td class="sample-code">
+	&lt;table  border=&quot;3&quot;&gt;<br/>
+	&nbsp;&nbsp;&lt;tr&gt;&lt;td&gt;B1C1&lt;/td&gt;&lt;td&gt;B1C2&lt;/td&gt;&lt;/tr&gt;<br/>
+	&nbsp;&nbsp;&lt;tr&gt;&lt;td&gt;B2C1&lt;/td&gt;&lt;td&gt;B2C2&lt;/td&gt;&lt;/tr&gt;<br/>
+	&lt;/table&gt;<br/>
+	</td><td class="sample">
+	<table border="3">
+		<tr><td>B1C1</td><td>B1C2</td></tr>
+		<tr><td>B2C1</td><td>B2C2</td></tr>
+	</table>
+	</td></tr>
+	<tr><td class="codeindt">bordercolor=&quot;#??????&quot;</td> <td class="cell">Warna Garis</td><td class="sample-code">
+	&lt;table  border=&quot;3&quot; bordercolor=&quot;#0000FF&quot;&gt;<br/>
+	&nbsp;&nbsp;&lt;tr&gt;&lt;td&gt;B1C1&lt;/td&gt;&lt;td&gt;B1C2&lt;/td&gt;&lt;/tr&gt;<br/>
+	&nbsp;&nbsp;&lt;tr&gt;&lt;td&gt;B2C1&lt;/td&gt;&lt;td&gt;B2C2&lt;/td&gt;&lt;/tr&gt;<br/>
+	&lt;/table&gt;<br/>
+	</td><td class="sample">
+	<table border="3" bordercolor="#0000FF">
+		<tr><td>B1C1</td><td>B1C2</td></tr>
+		<tr><td>B2C1</td><td>B2C2</td></tr>
+	</table>
+	</td></tr>
+	<tr><td class="codeindt">cellspacing=&quot;?&quot;</td>	<td class="cell">Jarak antara isi tabel (cell) dalam pixel</td><td class="sample-code">
+	&lt;table  border=&quot;1&quot; cellspacing=&quot;15&quot;&gt;<br/>
+	&nbsp;&nbsp;&lt;tr&gt;&lt;td&gt;B1C1&lt;/td&gt;&lt;td&gt;B1C2&lt;/td&gt;&lt;/tr&gt;<br/>
+	&nbsp;&nbsp;&lt;tr&gt;&lt;td&gt;B2C1&lt;/td&gt;&lt;td&gt;B2C2&lt;/td&gt;&lt;/tr&gt;<br/>
+	&lt;/table&gt;<br/>
+	</td><td class="sample">
+	<table border="1" cellspacing="15">
+		<tr><td>B1C1</td><td>B1C2</td></tr>
+		<tr><td>B2C1</td><td>B2C2</td></tr>
+	</table>
+	</td></tr>
+	<tr><td class="codeindt">cellpadding=&quot;?&quot;</td>	<td class="cell">Jarak antara dinding isi tabel (cell) dengan isi didalamnya</td><td class="sample-code">
+	&lt;table  border=&quot;1&quot; cellpadding=&quot;15&quot;&gt;<br/>
+	&nbsp;&nbsp;&lt;tr&gt;&lt;td&gt;B1C1&lt;/td&gt;&lt;td&gt;B1C2&lt;/td&gt;&lt;/tr&gt;<br/>
+	&nbsp;&nbsp;&lt;tr&gt;&lt;td&gt;B2C1&lt;/td&gt;&lt;td&gt;B2C2&lt;/td&gt;&lt;/tr&gt;<br/>
+	&lt;/table&gt;<br/>
+	</td><td class="sample">
+	<table border="1" cellpadding="15">
+		<tr><td>B1C1</td><td>B1C2</td></tr>
+		<tr><td>B2C1</td><td>B2C2</td></tr>
+	</table>
+	</td></tr>
+	<tr><td class="codeindt">align=&quot;??&quot;</td>	<td class="cell">Penempatan secara horizontal: <code>left (kiri), center (tengah), right (kanan)</code> </td>
+		<td class="sample-code">
+	&lt;table  border=&quot;1&quot; align=&quot;left&quot;&gt;<br/>
+	&nbsp;&nbsp;&lt;tr&gt;&lt;td&gt;B1C1&lt;/td&gt;&lt;td&gt;B1C2&lt;/td&gt;&lt;/tr&gt;<br/>
+	&nbsp;&nbsp;&lt;tr&gt;&lt;td&gt;B2C1&lt;/td&gt;&lt;td&gt;B2C2&lt;/td&gt;&lt;/tr&gt;<br/>
+	&lt;/table&gt;<br/><br/>
+	&lt;table  border=&quot;1&quot; align=&quot;center&quot;&gt;<br/>
+	&nbsp;&nbsp;&lt;tr&gt;&lt;td&gt;B1C1&lt;/td&gt;&lt;td&gt;B1C2&lt;/td&gt;&lt;/tr&gt;<br/>
+	&nbsp;&nbsp;&lt;tr&gt;&lt;td&gt;B2C1&lt;/td&gt;&lt;td&gt;B2C2&lt;/td&gt;&lt;/tr&gt;<br/>
+	&lt;/table&gt;<br/><br/>
+	&lt;table  border=&quot;1&quot; align=&quot;right&quot;&gt;<br/>
+	&nbsp;&nbsp;&lt;tr&gt;&lt;td&gt;B1C1&lt;/td&gt;&lt;td&gt;B1C2&lt;/td&gt;&lt;/tr&gt;<br/>
+	&nbsp;&nbsp;&lt;tr&gt;&lt;td&gt;B2C1&lt;/td&gt;&lt;td&gt;B2C2&lt;/td&gt;&lt;/tr&gt;<br/>
+	&lt;/table&gt;<br/>
+	</td><td class="sample">
+	<table border="1" align="left" width="70%">
+		<tr><td>B1C1</td><td>B1C2</td></tr>
+		<tr><td>B2C1</td><td>B2C2</td></tr>
+	</table>
+
+	<table border="1" align="center" width="70%">
+		<tr><td>B1C1</td><td>B1C2</td></tr>
+		<tr><td>B2C1</td><td>B2C2</td></tr>
+	</table>
+
+	<table border="1" align="right" width="70%">
+		<tr><td>B1C1</td><td>B1C2</td></tr>
+		<tr><td>B2C1</td><td>B2C2</td></tr>
+	</table>
+	</td></tr>
+	<tr><td class="codeindt">bgcolor=&quot;#??????&quot;</td> <td class="cell">Warna latar belakang</td><td class="sample-code">
+	&lt;table  border=&quot;1&quot; bgcolor=&quot;#FFAAAA&quot;&gt;<br/>
+	&nbsp;&nbsp;&lt;tr&gt;&lt;td&gt;B1C1&lt;/td&gt;&lt;td&gt;B1C2&lt;/td&gt;&lt;/tr&gt;<br/>
+	&nbsp;&nbsp;&lt;tr&gt;&lt;td&gt;B2C1&lt;/td&gt;&lt;td&gt;B2C2&lt;/td&gt;&lt;/tr&gt;<br/>
+	&lt;/table&gt;<br/>
+	</td><td class="sample">
+	<table border="1" bgcolor="#FFAAAA">
+		<tr><td>B1C1</td><td>B1C2</td></tr>
+		<tr><td>B2C1</td><td>B2C2</td></tr>
+	</table>
+	</td></tr>
+	<tr><td class="codeindt">width=&quot;??&quot;</td>	<td class="cell">Lebar tabel (dalam pixels atau %) </td><td class="sample-code">
+	&lt;table  border=&quot;1&quot; width=&quot;50%&quot;&gt;<br/>
+	&nbsp;&nbsp;&lt;tr&gt;&lt;td&gt;B1C1&lt;/td&gt;&lt;td&gt;B1C2&lt;/td&gt;&lt;/tr&gt;<br/>
+	&nbsp;&nbsp;&lt;tr&gt;&lt;td&gt;B2C1&lt;/td&gt;&lt;td&gt;B2C2&lt;/td&gt;&lt;/tr&gt;<br/>
+	&lt;/table&gt;<br/>
+	</td><td class="sample">
+	<table border="1" width="50%">
+		<tr><td>B1C1</td><td>B1C2</td></tr>
+		<tr><td>B2C1</td><td>B2C2</td></tr>
+	</table>
+	</td></tr>
+	<tr><td class="codeindt">height=&quot;??&quot;</td>	<td class="cell">Tinggi tabel (dalam pixels atau %) </td><td class="sample-code">
+	&lt;table  border=&quot;1&quot; height=&quot;200px&quot;&gt;<br/>
+	&nbsp;&nbsp;&lt;tr&gt;&lt;td&gt;B1C1&lt;/td&gt;&lt;td&gt;B1C2&lt;/td&gt;&lt;/tr&gt;<br/>
+	&nbsp;&nbsp;&lt;tr&gt;&lt;td&gt;B2C1&lt;/td&gt;&lt;td&gt;B2C2&lt;/td&gt;&lt;/tr&gt;<br/>
+	&lt;/table&gt;<br/>
+	</td><td class="sample">
+	<table border="1" height="200px">
+		<tr><td>B1C1</td><td>B1C2</td></tr>
+		<tr><td>B2C1</td><td>B2C2</td></tr>
+	</table>
+	</td></tr>
+	<tr><td class="code">&lt;tr&gt; ... &lt;/tr&gt;</td><td class="cell">Baris dalam tabel</td><td class="sample-code"></td><td class="sample"></td></tr>
+	<tr><td class="code">&lt;th&gt; ... &lt;/th&gt;</td><td class="cell">Kolom judul dalam tabel</td><td class="sample-code">
+	&lt;table  border=&quot;1&quot;&gt;<br/>
+	&nbsp;&nbsp;&lt;tr&gt;&lt;th&gt;HEADER1&lt;/th&gt;&lt;th&gt;HEADER2&lt;/th&gt;&lt;/tr&gt;<br/>
+	&nbsp;&nbsp;&lt;tr&gt;&lt;td&gt;B1C1&lt;/td&gt;&lt;td&gt;B1C2&lt;/td&gt;&lt;/tr&gt;<br/>
+	&nbsp;&nbsp;&lt;tr&gt;&lt;td&gt;B2C1&lt;/td&gt;&lt;td&gt;B2C2&lt;/td&gt;&lt;/tr&gt;<br/>
+	&lt;/table&gt;<br/>
+	</td><td class="sample">
+	<table border="1">
+		<tr><th>HEADER1</th><th>HEADER2</th></tr>
+		<tr><td>B1C1</td><td>B1C2</td></tr>
+		<tr><td>B2C1</td><td>B2C2</td></tr>
+	</table>
+	</td></tr>
+	<tr><td class="code">&lt;td&gt; ... &lt;/td&gt;</td><td class="cell">Kolom isi dalam tabel</td><td class="sample-code"></td><td class="sample"></td></tr>
+	<tr><td class="attrhead">&lt;td&gt; Settingan Tag:</td><td class="cell">&nbsp;</td><td class="sample-code"></td><td class="sample"></td></tr>
+	<tr><td class="codeindt">colspan=&quot;?&quot;</td>	<td class="cell">Jumlah kolom yang digabungkan menjadi satu isi (cell merge)</td><td class="sample-code">
+		&lt;table border=&quot;1&quot;&gt;<br/>
+		&nbsp;&nbsp;&lt;tr&gt;&lt;td&gt;B1C1&lt;/td&gt;&lt;td&gt;B1C2&lt;/td&gt;&lt;td&gt;B1C3&lt;/td&gt;&lt;/tr&gt;<br/>
+		&nbsp;&nbsp;&lt;tr&gt;&lt;td&gt;B2C1&lt;/td&gt;&lt;td colspan="2"&gt;B2C2&lt;/td&gt;&lt;/tr&gt;<br/>
+		&nbsp;&nbsp;&lt;tr&gt;&lt;td&gt;B3C1&lt;/td&gt;&lt;td&gt;B3C2&lt;/td&gt;&lt;td&gt;B3C3&lt;/td&gt;&lt;/tr&gt;<br/>
+		&lt;/table&gt;<br/>
+	</td><td class="sample">
+		<table border="1">
+		<tr><td>B1C1</td><td>B1C2</td><td>B1C3</td></tr>
+		<tr><td>B2C1</td><td colspan="2">B2C2</td></tr>
+		<tr><td>B3C1</td><td>B3C2</td><td>B3C3</td></tr>
+		</table>
+	</td></tr>
+	<tr><td class="codeindt">rowspan=&quot;?&quot;</td>	<td class="cell">Jumlah baris yang digabungkan menjadi satu isi (cell merge)</td><td class="sample-code">
+		&lt;table border=&quot;1&quot;&gt;<br/>
+			&nbsp;&nbsp;&lt;tr&gt;&lt;td&gt;B1C1&lt;/td&gt;&lt;td&gt;B1C2&lt;/td&gt;&lt;td&gt;B1C3&lt;/td&gt;&lt;/tr&gt;<br/>
+			&nbsp;&nbsp;&lt;tr&gt;&lt;td&gt;B2C1&lt;/td&gt;&lt;td rowspan="2"&gt;B2C2&lt;/td&gt;&lt;td&gt;B2C3&lt;/td&gt;&lt;/tr&gt;<br/>
+			&nbsp;&nbsp;&lt;tr&gt;&lt;td&gt;B3C1&lt;/td&gt;&lt;td&gt;B3C3&lt;/td&gt;&lt;/tr&gt;<br/>
+		&lt;/table&gt;
+		</td><td class="sample">
+		<table border="1">
+		<tr><td>B1C1</td><td>B1C2</td><td>B1C3</td></tr>
+		<tr><td>B2C1</td><td rowspan="2">B2C2</td><td>B2C3</td></tr>
+		<tr><td>B3C1</td><td>B3C3</td></tr>
+		</table>
+	</td></tr>
+	<tr><td class="codeindt">width=&quot;??&quot;</td>	<td class="cell">Lebar isi tabel/cell (dalam pixels atau %) </td><td class="sample-code">
+	&lt;table border=&quot;1&quot;&gt;<br/>
+		&nbsp;&nbsp;&lt;tr&gt;&lt;td width="300px"&gt;B1C1&lt;/td&gt;&lt;td&gt;B1C2&lt;/td&gt;&lt;/tr&gt;<br/>
+		&nbsp;&nbsp;&lt;tr&gt;&lt;td&gt;B2C1&lt;/td&gt;&lt;td&gt;B2C2&lt;/td&gt;&lt;/tr&gt;<br/>
+	&lt;/table&gt;
+	</td><td class="sample">
+	<table border="1">
+		<tr><td width="300px">B1C1</td><td>B1C2</td></tr>
+		<tr><td>B2C1</td><td>B2C2</td></tr>
+	</table>
+	</td></tr>
+	<tr><td class="codeindt">height=&quot;??&quot;</td>	<td class="cell">Tinggi isi tabel/cell (dalam pixels atau %) </td><td class="sample-code">
+		&lt;table border=&quot;1&quot;&gt;<br/>
+		&nbsp;&nbsp;&lt;tr&gt;&lt;td height="200px"&gt;B1C1&lt;/td&gt;&lt;td&gt;B1C2&lt;/td&gt;&lt;/tr&gt;<br/>
+		&nbsp;&nbsp;&lt;tr&gt;&lt;td&gt;B2C1&lt;/td&gt;&lt;td&gt;B2C2&lt;/td&gt;&lt;/tr&gt;<br/>
+		&lt;/table&gt;<br/>
+	</td><td class="sample">
+		<table border="1">
+		<tr><td height="200px">B1C1</td><td>B1C2</td></tr>
+		<tr><td>B2C1</td><td>B2C2</td></tr>
+	</table></td></tr>
+	<tr><td class="codeindt">bgcolor=&quot;#??????&quot;</td> <td class="cell">Warna latar belakang</td><td class="sample-code">
+	&lt;table border=&quot;1&quot; width=&quot;50%&quot;&gt;<br/>
+		&nbsp;&nbsp;&lt;tr&gt;&lt;td bgcolor="#AAFFAA"&gt;B1C1&lt;/td&gt;&lt;td&gt;B1C2&lt;/td&gt;&lt;/tr&gt;<br/>
+		&nbsp;&nbsp;&lt;tr&gt;&lt;td&gt;B2C1&lt;/td&gt;&lt;td&gt;B2C2&lt;/td&gt;&lt;/tr&gt;<br/>
+	&lt;/table&gt;
+	</td><td class="sample">
+	<table border="1" width="50%">
+		<tr><td bgcolor="#AAFFAA">B1C1</td><td>B1C2</td></tr>
+		<tr><td>B2C1</td><td>B2C2</td></tr>
+	</table>
+	</td></tr>
+	<tr><td class="codeindt">align=&quot;??&quot;</td>	<td class="cell">Penempatan isi secara horizontal didalam isi tabel: <code>left (kiri), center (tengah), right (kanan)</code> </td><td class="sample-code">
+	&lt;table border=&quot;1&quot; width=&quot;50%&quot;&gt;<br/>
+		&nbsp;&nbsp;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;B1C1&lt;/td&gt;&lt;td&gt;B1C2&lt;/td&gt;&lt;/tr&gt;<br/>
+		&nbsp;&nbsp;&lt;tr&gt;&lt;td&gt;B2C1&lt;/td&gt;&lt;td&gt;B2C2&lt;/td&gt;&lt;/tr&gt;<br/>
+	&lt;/table&gt;<br/>
+<br/>
+	&lt;table border=&quot;1&quot; width=&quot;50%&quot;&gt;<br/>
+		&nbsp;&nbsp;&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;B1C1&lt;/td&gt;&lt;td&gt;B1C2&lt;/td&gt;&lt;/tr&gt;<br/>
+		&nbsp;&nbsp;&lt;tr&gt;&lt;td&gt;B2C1&lt;/td&gt;&lt;td&gt;B2C2&lt;/td&gt;&lt;/tr&gt;<br/>
+	&lt;/table&gt;<br/>
+<br/>
+	&lt;table border=&quot;1&quot; width=&quot;50%&quot;&gt;<br/>
+		&nbsp;&nbsp;&lt;tr&gt;&lt;td align=&quot;right&quot;&gt;B1C1&lt;/td&gt;&lt;td&gt;B1C2&lt;/td&gt;&lt;/tr&gt;<br/>
+		&nbsp;&nbsp;&lt;tr&gt;&lt;td&gt;B2C1&lt;/td&gt;&lt;td&gt;B2C2&lt;/td&gt;&lt;/tr&gt;<br/>
+	&lt;/table&gt;
+	</td><td class="sample">
+	<table border="1" width="50%">
+		<tr><td align="left">B1C1</td><td>B1C2</td></tr>
+		<tr><td>B2C1</td><td>B2C2</td></tr>
+	</table>
+
+	<table border="1" width="50%">
+		<tr><td align="center">B1C1</td><td>B1C2</td></tr>
+		<tr><td>B2C1</td><td>B2C2</td></tr>
+	</table>
+
+	<table border="1" width="50%">
+		<tr><td align="right">B1C1</td><td>B1C2</td></tr>
+		<tr><td>B2C1</td><td>B2C2</td></tr>
+	</table>
+	</td></tr>
+	<tr><td class="codeindt">valign=&quot;??&quot;</td>	<td class="cell">Penempatan isi secara vertikal didalam isi tabel:<code>top (atas), middle (tengah), bottom (bawah)</code> </td><td class="sample-code">
+		&lt;table border=&quot;1&quot; height=&quot;100px&quot;&gt;<br/>
+			&nbsp;&nbsp;&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;B1C1&lt;/td&gt;&lt;td&gt;B1C2&lt;/td&gt;&lt;/tr&gt;<br/>
+			&nbsp;&nbsp;&lt;tr&gt;&lt;td&gt;B2C1&lt;/td&gt;&lt;td&gt;B2C2&lt;/td&gt;&lt;/tr&gt;<br/>
+		&lt;/table&gt;<br/>
+<br/>
+		&lt;table border=&quot;1&quot; height=&quot;100px&quot;&gt;<br/>
+			&nbsp;&nbsp;&lt;tr&gt;&lt;td valign=&quot;middle&quot;&gt;B1C1&lt;/td&gt;&lt;td&gt;B1C2&lt;/td&gt;&lt;/tr&gt;<br/>
+			&nbsp;&nbsp;&lt;tr&gt;&lt;td&gt;B2C1&lt;/td&gt;&lt;td&gt;B2C2&lt;/td&gt;&lt;/tr&gt;<br/>
+		&lt;/table&gt;<br/>
+<br/>
+		&lt;table border=&quot;1&quot; height=&quot;100px&quot;&gt;<br/>
+			&nbsp;&nbsp;&lt;tr&gt;&lt;td valign=&quot;bottom&quot;&gt;B1C1&lt;/td&gt;&lt;td&gt;B1C2&lt;/td&gt;&lt;/tr&gt;<br/>
+			&nbsp;&nbsp;&lt;tr&gt;&lt;td&gt;B2C1&lt;/td&gt;&lt;td&gt;B2C2&lt;/td&gt;&lt;/tr&gt;<br/>
+		&lt;/table&gt;
+	</td><td class="sample">
+
+	<table border="1" height="100px">
+		<tr><td valign="top">B1C1</td><td>B1C2</td></tr>
+		<tr><td>B2C1</td><td>B2C2</td></tr>
+	</table>
+
+	<table border="1" height="100px">
+		<tr><td valign="middle">B1C1</td><td>B1C2</td></tr>
+		<tr><td>B2C1</td><td>B2C2</td></tr>
+	</table>
+
+	<table border="1" height="100px">
+		<tr><td valign="bottom">B1C1</td><td>B1C2</td></tr>
+		<tr><td>B2C1</td><td>B2C2</td></tr>
+	</table>
+
+	</td></tr>
+	<tr><td class="codeindt">nowrap</td>			<td class="cell">Isi tulisan didalam isi tabel tidak boleh ada pindah baris.</td><td class="sample-code"></td><td class="sample"></td></tr>
+	</table>
+</div>
+
+
+<div class="chapter">
+    <table class="sheet">
+    <tr><th class="head3" id="frames">Frame</th>
+	<th class="toplink"></th></tr>
+	<tr><td class="code">&lt;frameset&gt; ... &lt;/frameset&gt;</td><td class="cell">Membuat kumpulan frame</td><td class="sample-code"></td><td class="sample"></td></tr>
+	<tr><td class="attrhead">&lt;frameset&gt; Settingan Tag:</td><td class="cell">&nbsp;</td><td class="sample-code"></td><td class="sample"></td></tr>
+	<tr><td class="codeindt">rows=&quot;??,??, ...&quot;</td>	<td class="cell">Menentukan ukuran baris &amp; dan jumlah baris(Ukuran dalam pixels atau %)</td><td class="sample-code"></td><td class="sample"></td></tr>
+	<tr><td class="codeindt">cols=&quot;??,??, ...&quot;</td>	<td class="cell">Menentukan ukuran kolom &amp; dan jumlah kolom(Ukuran dalam pixels atau %)</td><td class="sample-code"></td><td class="sample"></td></tr>
+	<tr><td class="codeindt">noresize=&quot;noresize&quot;</td>	<td class="cell">Pengguna tidak boleh mengubah ukuran frame didalam kumpulan frame</td><td class="sample-code"></td><td class="sample"></td></tr>
+	<tr><td class="code">&lt;frame&gt; ... &lt;/frame&gt;</td><td class="cell">Membuat sebua frame dalam kumpulan frame</td><td class="sample-code"></td><td class="sample"></td></tr>
+	<tr><td class="attrhead">&lt;frame&gt; Settingan Tag:</td><td class="cell">&nbsp;</td><td class="sample-code"></td><td class="sample"></td></tr>
+	<tr><td class="codeindt">src=&quot;url&quot;</td>	<td class="cell">Lokasi dari file HTML yang dibuka dalam frame.</td><td class="sample-code"></td><td class="sample"></td></tr>
+	<tr><td class="codeindt">name=&quot;***&quot;</td>	<td class="cell">Penamaan yang unik untuk tiap jendela frame.</td><td class="sample-code"></td><td class="sample"></td></tr>
+	<tr><td class="codeindt">marginwidth=&quot;?&quot;</td>	<td class="cell">Jarak kosong di atas dan bawah dalam frame dengan isi frame dalam pixel</td><td class="sample-code"></td><td class="sample"></td></tr>
+	<tr><td class="codeindt">marginheight=&quot;?&quot;</td>	<td class="cell">Jarak kosong di kiri dan kanan dalam frame dengan isi frame dalam pixel</td><td class="sample-code"></td><td class="sample"></td></tr>
+	<tr><td class="codeindt">noresize=&quot;noresize&quot;</td>	<td class="cell">Menentukan bahwa ukuran frame tidak boleh berubah.</td><td class="sample-code"></td><td class="sample"></td></tr>
+	<tr><td class="codeindt">scrolling=&quot;***&quot;</td>	<td class="cell">Menentukan apakah boleh scroll didalam isi frame: <code> yes, no, auto</code></td><td class="sample-code"></td><td class="sample"></td></tr>
+	<tr><td class="codeindt">frameborder=&quot;?&quot;</td>	<td class="cell">Garis bingkai frame: (<code>1</code>=ya, <code>2</code>=tidak)</td><td class="sample-code"></td><td class="sample"></td></tr>
+	<tr><td class="codeindt">bordercolor=&quot;#??????&quot;</td>	<td class="cell">Warna garis bingkai </td><td class="sample-code"></td><td class="sample"></td></tr>
+	<tr><td class="code">&lt;noframes&gt; ... &lt;/noframes&gt;</td><td class="cell">Isi yang ditampilkan apabila browser tidak bisa menampilkan frame.</td><td class="sample-code"></td><td class="sample"></td></tr>
+    </table>
+</div>
+
+<div class="chapter">
+	<table class="sheet">
+	<tr><th class="head3" id="forms">Formulir Isian (Form)</th>
+	<th class="toplink"></th></tr>
+	<tr><td class="code">&lt;form&gt; ... &lt;/form&gt;</td><td class="cell">Membuat Form</td><td class="sample-code">Ini &lt;form&gt;FORM&lt;/form&gt; Kosong</td><td class="sample">Ini <form>FORM</form> Kosong</td></tr>
+	<tr><td class="attrhead">&lt;form&gt; Settingan Tag:</td><td class="cell">&nbsp;</td><td class="sample-code"></td><td class="sample"></td></tr>
+	<tr><td class="codeindt">action=&quot;url&quot;</td>	<td class="cell">URL dari pengiriman form atau skrip</td><td class="sample-code" rowspan="3">Ini &lt;form action=&quot;http://www.google.com" method=&quot;get&quot; enctype=&quot;multipart/form-data&quot;&gt; Form &lt;/form&gt; Kosong</td><td class="sample" rowspan="3">Ini <form action="http://www.google.com" method="get" enctype="multipart/form-data"> Form </form> Kosong</td></tr>
+	<tr><td class="codeindt">method=&quot;***&quot;</td>	<td class="cell">Cara pengiriman Form: <code>get, post</code></td></tr>
+	<tr><td class="codeindt">enctype=&quot;***&quot;</td>	<td class="cell">Dipergunakan untuk mengunggah file: <code>enctype=&quot;multipart/form-data&quot;</code></td></tr>
+	<tr><td class="code">&lt;input&gt; ... &lt;/input&gt;</td><td class="cell">Isian didalam form</td><td class="sample-code"></td><td class="sample"></td></tr>
+	<tr><td class="attrhead">&lt;input&gt; Settingan Tag:</td><td class="cell">&nbsp;</td><td class="sample-code"></td><td class="sample"></td></tr>
+	<tr><td class="codeindt">type=&quot;***&quot;</td>	<td class="cell">Jenis isian: <code>text, password, checkbox, submit</code> dan sebagainya.</td><td class="sample-code" rowspan="6">
+		&lt;form&gt;<br/>
+			Ini Type=&quot;Text&quot; : <b style="color:#000080">&lt;input type=&quot;text&quot; name=&quot;inputText&quot; size=&quot;10&quot; maxlength=&quot;40&quot;/&gt;</b>&lt;br/&gt;<br/>
+			Ini Type=&quot;Password&quot; : <b style="color:#000080">&lt;input type=&quot;password&quot; name=&quot;inputPassword&quot; size=&quot;10&quot;/&gt;</b>&lt;br/&gt;<br/>
+			Ini Type=&quot;Checkbox&quot; : <b style="color:#000080">&lt;input type=&quot;checkbox&quot; name=&quot;checkBox&quot;/&gt;</b>&lt;br/&gt;<br/>
+			Ini Type=&quot;Radio&quot; : <b style="color:#000080">&lt;input type=&quot;radio&quot; name=&quot;radioButton&quot;/&gt;&lt;input type=&quot;radio&quot; name=&quot;radioButton&quot;/&gt;</b>&lt;br/&gt;<br/>
+			Ini Type=&quot;Button&quot; : <b style="color:#000080">&lt;input type=&quot;button&quot; name=&quot;inputText&quot; value=&quot;Tombol&quot;/&gt;</b>&lt;br/&gt;<br/>
+			Ini Type=&quot;Submit&quot; : <b style="color:#000080">&lt;input type=&quot;submit&quot; name=&quot;inputText&quot; value=&quot;Kirim&quot;/&gt;</b><br/>
+		&lt;/form&gt;
+	</td><td class="sample" rowspan="6">
+		<form>
+			Ini Type="Text" : <input type="text" name="inputText" size="10" maxlength="40"/><br/>
+			Ini Type="Password" : <input type="password" name="inputPassword" size="10"/><br/>
+			Ini Type="Checkbox" : <input type="checkbox" name="checkBox"/><br/>
+			Ini Type="Radio" : <input type="radio" name="radioButton"/><input type="radio" name="radioButton"/><br/>
+			Ini Type="Button" : <input type="button" name="inputText" value="Tombol"/><br/>
+			Ini Type="Submit" : <input type="submit" name="inputText" value="Kirim"/>
+		</form>
+	</td></tr>
+	<tr><td class="codeindt">name=&quot;***&quot;</td>	<td class="cell">Nama isian (dipergunakan sewaktu mengolah data isian)</td></tr>
+	<tr><td class="codeindt">value=&quot;***&quot;</td>	<td class="cell">Nilai dalam isian</td></tr>
+	<tr><td class="codeindt">size=&quot;***&quot;</td>	<td class="cell">Panjang isian (berapa banyak huruf yang dapat ditampilkan oleh form isian)</td></tr>
+	<tr><td class="codeindt">maxlength=&quot;?&quot;</td>	<td class="cell">Berapa banyak maksimum jumlah huruf yang bisa disimpan dalam form isian</td></tr>
+	<tr><td class="codeindt">checked</td>	<td class="cell">Menandakan pilihan jika isian adalah &quot;radio button&quot; atau &quot;checkbox&quot;</td></tr>
+<!--
+	<tr><td class="attrhead">&lt;button&gt; Settingan Tag:</td><td class="sample-code"></td><td class="sample"></td></tr>
+	<tr><td class="codeindt">type=&quot;***&quot;</td>	<td class="cell">Button Type: <code>submit, reset, button</code></td><td class="sample-code"></td><td class="sample"></td></tr>
+	<tr><td class="codeindt">name=&quot;***&quot;</td>	<td class="cell">Button Name (for form processing script)</td><td class="sample-code"></td><td class="sample"></td></tr>
+	<tr><td class="codeindt">value=&quot;***&quot;</td>	<td class="cell">Label on Button</td><td class="sample-code"></td><td class="sample"></td></tr>
+	<tr><td class="codeindt">size=&quot;?&quot;</td>	<td class="cell">Button Size (width)</td><td class="sample-code"></td><td class="sample"></td></tr>
+-->
+
+	<tr><td class="code">&lt;select&gt; ... &lt;/select&gt;</td><td class="cell">Membuat isian berbentuk pilihan.</td><td class="sample-code" rowspan="9">
+		Pilihan COMBO : &lt;br/&gt;<br/>
+		&lt;select name=&quot;pilihan&quot;&gt;<br/>
+		&nbsp;&nbsp;&lt;option value=&quot;nilai1&quot;&gt;Pilihan1&lt;/option&gt;<br/>
+		&nbsp;&nbsp;&lt;option value=&quot;nilai2&quot;&gt;Pilihan2&lt;/option&gt;<br/>
+		&nbsp;&nbsp;&lt;option value=&quot;nilai3&quot;&gt;Pilihan3&lt;/option&gt;<br/>
+		&lt;/select&gt;&lt;br/&gt;&lt;br/&gt;<br/>
+		Pilihan List Box : &lt;br/&gt;<br/>
+		&lt;select name=&quot;pilihan2&quot; size=&quot;3&quot;&gt;<br/>
+		&nbsp;&nbsp;&lt;option value=&quot;nilai1&quot;&gt;Pilihan1&lt;/option&gt;<br/>
+		&nbsp;&nbsp;&lt;option value=&quot;nilai2&quot;&gt;Pilihan2&lt;/option&gt;<br/>
+		&nbsp;&nbsp;&lt;option value=&quot;nilai3&quot;&gt;Pilihan3&lt;/option&gt;<br/>
+		&lt;/select&gt;&lt;br/&gt;&lt;br/&gt;<br/>
+		Pilihan List Box (Multiple): &lt;br/&gt;<br/>
+		&lt;select name=&quot;pilihan3&quot; size=&quot;3&quot; multiple&gt;<br/>
+		&nbsp;&nbsp;&lt;option value=&quot;nilai1&quot;&gt;Pilihan1&lt;/option&gt;<br/>
+		&nbsp;&nbsp;&lt;option value=&quot;nilai2&quot;&gt;Pilihan2&lt;/option&gt;<br/>
+		&nbsp;&nbsp;&lt;option value=&quot;nilai3&quot;&gt;Pilihan3&lt;/option&gt;<br/>
+		&lt;/select&gt;<br/>
+	</td><td class="sample" rowspan="9">
+		Pilihan COMBO : <br/>
+		<select name="pilihan">
+			<option value="nilai1">Pilihan1</option>
+			<option value="nilai2">Pilihan2</option>
+			<option value="nilai3">Pilihan3</option>
+		</select><br/><br/>
+		Pilihan List Box : <br/>
+		<select name="pilihan2" size="3">
+			<option value="nilai1">Pilihan1</option>
+			<option value="nilai2">Pilihan2</option>
+			<option value="nilai3">Pilihan3</option>
+		</select><br/><br/>
+		Pilihan List Box (Multiple): <br/>
+		<select name="pilihan3" size="3" multiple>
+			<option value="nilai1">Pilihan1</option>
+			<option value="nilai2">Pilihan2</option>
+			<option value="nilai3">Pilihan3</option>
+		</select>
+	</td></tr>
+	<tr><td class="attrhead">&lt;select&gt; Settingan Tag:</td><td class="cell">&nbsp;</td></tr>
+	<tr><td class="codeindt">name=&quot;***&quot;</td>	<td class="cell">Nama isian</td></tr>
+	<tr><td class="codeindt">size=&quot;?&quot;</td>	<td class="cell">Jumlah dari pilihan yang bisa ditampilkan.</td></tr>
+	<tr><td class="codeindt">multiple</td>	<td class="cell">Apakah bisa memilih lebih dari satu pilihan dalam isian.</td></tr>
+
+	<tr><td class="code">&lt;option&gt; ... &lt;/option&gt;</td><td class="cell">Isi pilihan yang bisa dipilih</td></tr>
+	<tr><td class="attrhead">&lt;option&gt; Settingan Tag:</td><td class="cell">&nbsp;</td></tr>
+	<tr><td class="codeindt">value=&quot;***&quot;</td>	<td class="cell">Nilai dari isi pilihan</td></tr>
+	<tr><td class="codeindt">selected</td>	<td class="cell">Menentukan apakah isi pilihan tersebut terpilih atau tidak</td></tr>
+
+	<tr><td class="code">&lt;textarea&gt; ... &lt;/textarea&gt;</td><td class="cell">Isian tulisan yang bisa menampung beberapa baris tulisan</td><td class="sample-code"></td><td class="sample"></td></tr>
+	<tr><td class="attrhead">&lt;textarea&gt; Settingan Tag:</td><td class="cell">&nbsp;</td><td class="sample-code"></td><td class="sample"></td></tr>
+	<tr><td class="codeindt">name=&quot;***&quot;</td>	<td class="cell">Nama isian</td><td class="sample-code"></td><td class="sample"></td></tr>
+	<tr><td class="codeindt">rows=&quot;?&quot;</td>	<td class="cell">Jumla baris tulisan yang akan ditampilkan</td><td class="sample-code"></td><td class="sample"></td></tr>
+	<tr><td class="codeindt">cols=&quot;?&quot;</td>	<td class="cell">Jumlah huruf yang bisa ditampilkan dalam satu baris.</td><td class="sample-code"></td><td class="sample"></td></tr>
+	<tr><td class="codeindt">wrap=&quot;***&quot;</td>	<td class="cell">Bagaimana pindah baris diberlakukan: <code>off, hard, soft</code></td><td class="sample-code"></td><td class="sample"></td></tr>
+	</table>
+</div>
+
+<div class="chapter">
+	<table class="sheet">
+	<tr><th class="head3" id="specialchars">Huruf huruf khusus</th>
+	<th class="toplink"></th></tr>
+	<tr><td class="code">&amp;lt;</td><td class="cell"><b>&lt;</b> - Lebih Kecil</td><td class="sample-code">Lebih &amp;lt; Kecil</td><td class="sample">Lebih &lt; Kecil</td></tr>
+	<tr><td class="code">&amp;gt;</td><td class="cell"><b>&gt;</b> - Lebih Besar</td><td class="sample-code">Lebih &amp;gt; Besar</td><td class="sample">Lebih &gt; Besar</td></tr>
+	<tr><td class="code">&amp;amp;</td><td class="cell"><b>&amp;</b> - Tanda "Dan" / &amp;</td><td class="sample-code">Kucing &amp;amp; Anjing</td><td class="sample">Kucing &amp; Anjing</td></tr>
+	<tr><td class="code">&amp;quot;</td><td class="cell"><b>&quot;</b> - Tanda Kutip</td><td class="sample-code">Dalam &amp;quot;Tanda&amp;quot; Kutip</td><td class="sample">Dalam &quot;Tanda&quot; Kutip</td></tr>
+	<tr><td class="code">&amp;copy;</td><td class="cell"><b>&copy;</b> - Tanda Hak Cipta</td><td class="sample-code">Ferdinand &amp;copy; 2017</td><td class="sample">	Ferdinand &copy; 2017</td></tr>
+	<tr><td class="code">&amp;trade;</td><td class="cell"><b>&trade;</b> - Tanda Merk Dagang</td><td class="sample-code">Lontong Sayur &amp;trade;</td><td class="sample">	Lontong Sayur &trade;</td></tr>
+	<tr><td class="code">&amp;nbsp;</td><td class="cell"><b>&nbsp;</b> - Spasi, jarak antar kata.</td><td class="sample-code">Banyak&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spasi</td><td class="sample">Banyak&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Spasi</td></tr>
+	<tr><td class="code">&amp;#??;</td><td class="cell">Membuat huruf berdasarkan ISO 8859-1. Gantikan ?? dengan kode ISO. Contoh Huruf ISO Huruf Jepang Bisa dilihat di <a href="https://www.key-shortcut.com/en/writing-systems/%E3%81%B2%E3%82%89%E3%81%8C%E3%81%AA-japanese/" target="_blank">sini</a></td><td class="sample-code">&amp;#12501;&amp;#12455;&amp;#12523;&amp;#12487;&amp;#12451; &amp;#12490;&amp;#12477;&amp;#12489;&amp;nbsp;&amp;nbsp; &amp;#12493;&amp;#12510;&amp;#12531; - ferudinando neman</td><td class="sample">
+		&#12501;&#12455;&#12523;&#12487;&#12451;&#12490;&#12477;&#12489;&nbsp;&nbsp;&#12493;&#12510;&#12531; - ferudinando neman</td></tr> <!-- フェルディナンド ネマン -->
+	</table>
+</div>
+
+<div class="chapter">
+	<table class="sheet">
+	<tr><th class="head3" id="misc_meta">Tag-Tag Tambahan</th>
+	<th class="toplink"></th></tr>
+	<tr><td class="code">&lt;!-- ... --&gt;</td><td class="cell">Komentar didalam kode HTML. Apapun yang ada didalam tag ini tidak akan ditampilkan oleh browser</td><td class="sample-code"></td><td class="sample"></td></tr>
+	<tr><td class="code">&lt;!DOCTYPE html ... &gt;</td><td class="cell">Definisi dokumen HTML (<a href="http://en.wikipedia.org/wiki/Doctype">wiki</a>)</td><td class="sample-code"></td><td class="sample"></td></tr>
+	<tr><td class="code">&lt;meta&gt; ... &lt;/meta&gt;</td><td class="cell">Tag META (data mengenai data)</td><td class="sample-code"></td><td class="sample"></td></tr>
+	<tr><td class="attrhead">&lt;meta&gt; Settingan Tag:</td><td class="cell">&nbsp;</td><td class="sample-code"></td><td class="sample"></td></tr>
+	<tr><td class="codeindt">name=&quot;***&quot;</td><td class="cell">Nama data: <code>description, keywords, author</code></td><td class="sample-code"></td><td class="sample"></td></tr>
+	<tr><td class="codeindt">http-equiv=&quot;***&quot;</td><td class="cell">Nama Padanan dalam HTTP: <code>title, etc.</code></td><td class="sample-code"></td><td class="sample"></td></tr>
+	<tr><td class="codeindt">content=&quot;***&quot;</td><td class="cell">Isi data</td><td class="sample-code"></td><td class="sample"></td></tr>
+
+	<tr><td class="code">&lt;link&gt;</td><td class="cell">Tautan kepada file lain yang berhubungan dengan HTML ini.</td><td class="sample-code"></td><td class="sample"></td></tr>
+	<tr><td class="attrhead">&lt;link&gt; Settingan Tag:</td><td class="cell">&nbsp;</td><td class="sample-code"></td><td class="sample"></td></tr>
+	<tr><td class="codeindt">rel=&quot;***&quot;</td><td class="cell">Jenis hubungan</td><td class="sample-code"></td><td class="sample"></td></tr>
+	<tr><td class="codeindt">http=&quot;<i>url</i>&quot;</td><td class="cell">URL atau tautan kepada file dimaksud</td><td class="sample-code"></td><td class="sample"></td></tr>
+	<tr><td class="codeindt">type=&quot;***&quot;</td><td class="cell">Jenis dari file yang ditautkan, eg: <code>text/css</code></td><td class="sample-code"></td><td class="sample"></td></tr>
+	<tr><td class="codeindt">title=&quot;***&quot;</td><td class="cell">Judul dari tautan (tidak wajib)</td><td class="sample-code"></td><td class="sample"></td></tr>
+	</table>
+</div>
+
+<div class="chapter">
+	<table class="sheet">
+	<tr><th class="head3" id="bodybg">Isi HTML, latar belakang dan warna</th><th class="toplink"></th></tr>
+	<tr><td class="attrhead">&lt;body&gt; Settingan Tag:</td><td class="cell">&nbsp;</td><td class="sample-code"></td><td class="sample"></td></tr>
+	<tr><td class="codeindt">background=&quot;<i>url</i>&quot;</td><td class="cell">Gambar latar belakang</td><td class="sample-code"></td><td class="sample"></td></tr>
+	<tr><td class="codeindt">bgcolor=&quot;#??????&quot;</td><td class="cell">Warna Latar Belakang</td><td class="sample-code"></td><td class="sample"></td></tr>
+	<tr><td class="codeindt">text=&quot;#??????&quot;</td><td class="cell">Warna tulisan</td><td class="sample-code"></td><td class="sample"></td></tr>
+	<tr><td class="codeindt">link=&quot;#??????&quot;</td><td class="cell">Warna tautan (link)</td><td class="sample-code"></td><td class="sample"></td></tr>
+	<tr><td class="codeindt">vlink=&quot;#??????&quot;</td><td class="cell">Warna tautan (link) jika tautan pernah dikunjungi</td><td class="sample-code"></td><td class="sample"></td></tr>
+	<tr><td class="codeindt">alink=&quot;#??????&quot;</td><td class="cell">Warna tautan (link) jika tautan dalam fokus pilihan</td><td class="sample-code"></td><td class="sample"></td></tr>
+	<tr><td class="codeindt">bgproperties=&quot;fixed&quot;</td><td class="cell">Settingan gambar latar belakang - &quot;Fixed&quot; = Gambar tidak ikut scroll </td><td class="sample-code"></td><td class="sample"></td></tr>
+	<tr><td class="codeindt">leftmargin=&quot;?&quot;</td><td class="cell">Jarak kosong antara batas kiri browser dan isi website. (Browser IE)</td><td class="sample-code"></td><td class="sample"></td></tr>
+	<tr><td class="codeindt">topmargin=&quot;?&quot;</td><td class="cell">Jarak kosong antara batas atas browser dan isi website. (Browser IE)</td><td class="sample-code"></td><td class="sample"></td></tr>
+	</table>
+</div>
+
+<h2 align="center">WARNA</h2>
+
+<table border="1" width="30%" bgcolor="FFFFFF" align="center">
+	<tr><th>WARNA</th><th>NILAI</th><th>PILIH</th><th>JADINYA</th><th>WARNANYA</th></tr>
+	<tr><td><font color="#FF0000">MERAH</font></td><td align="center">00 s/d FF</td><td align="center">
+		<select id="RED" name="RED" onchange="setColor();"></select>
+	</td><td align="center" rowspan="3" id="COLOR_TEXT">#000000</td><td align="center" rowspan="3" id="COLOR_SHOW" style="background-color:#000000"></td></tr>
+
+	<tr><td><font color="#00FF00">HIJAU</font></td><td align="center">00 s/d FF</td><td align="center">
+		<select id="GREEN" name="GREEN" onchange="setColor();"></select>
+	</td></tr>
+
+	<tr><td><font color="#0000FF">BIRU</font></td><td align="center">00 s/d FF</td><td align="center">
+		<select id="BLUE" name="BLUE" onchange="setColor();"></select>
+	</td></tr>
+</table>
+<br/><br/><br/>
+
+<script type="text/javascript">
+	var redElement=document.getElementById('RED');
+	var greenElement=document.getElementById('GREEN');
+	var blueElement=document.getElementById('BLUE');
+
+	for(var i = 0; i <= 0xFF; i++) {
+		var hex = i.toString(16).toUpperCase();
+		if(hex.length == 1) {
+			hex = "0" + hex;
+		}
+
+		var optRed = document.createElement('option');
+		optRed.value = hex;
+    	optRed.innerHTML = hex;
+
+    	var optGreen = document.createElement('option');
+		optGreen.value = hex;
+    	optGreen.innerHTML = hex;
+
+    	var optBlue = document.createElement('option');
+		optBlue.value = hex;
+    	optBlue.innerHTML = hex;
+
+    	redElement.appendChild(optRed);
+    	greenElement.appendChild(optGreen);
+    	blueElement.appendChild(optBlue);
+	}
+
+	function setColor() {
+		var redElement=document.getElementById('RED');
+		var greenElement=document.getElementById('GREEN');
+		var blueElement=document.getElementById('BLUE');
+
+		var color = "#" + redElement.options[redElement.selectedIndex].value  + greenElement.options[greenElement.selectedIndex].value  + blueElement.options[blueElement.selectedIndex].value;
+
+		var colorText = document.getElementById('COLOR_TEXT');
+		var colorShow = document.getElementById('COLOR_SHOW');
+		colorText.innerHTML = color;
+		colorShow.style.backgroundColor=color;
+	}
+</script>
+
+</body>
+</html>
